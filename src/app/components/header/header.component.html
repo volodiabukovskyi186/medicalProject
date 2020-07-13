@@ -1,0 +1,35 @@
+<header >
+    <div class="conteiner" (window:resize)="onResize($event)">
+        <div class="small_bar">
+                <i *ngIf="!burgerStatusBtn" (click)="burgerMenu()" class="fas fa-bars"></i>
+                <i *ngIf="burgerStatusBtn" (click)="burgerMenu()" class="fas fa-times"></i>    
+
+        </div>
+        <div class="logo">
+            <img src="assets/img/Screenshot_1 1.png" alt="">
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li   >Who we are <i class="fas fa-chevron-down"></i>
+                </li>
+                <li>Walk-in Clinic </li>
+                <li>Services  <i class="fas fa-chevron-down"></i></li>
+                <li>Appointments </li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="small_search">
+                <i class="fas fa-search"></i>
+        </div>
+    </div>
+    <div  [@smallbar]='burgerStatus'  class="burger_conteiner">
+            <ul>
+                    <li>Who we are </li>
+                    <li>Walk-in Clinic </li>
+                    <li>Services </li>
+                    <li>Appointments </li>
+                    <li>Contact</li>
+                </ul>
+    </div>
+
+</header>
