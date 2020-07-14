@@ -17,8 +17,7 @@ h1{
   display: flex;
   justify-content: center;
   padding-bottom: 15%;
-  // position: relative;
-  // z-index: 0;
+
 }
 .first_conteiner {
   width: 100%;
@@ -120,14 +119,8 @@ h1{
   }
 }
 .second_photo {
-  // background-color: orange;
   width: 45%;
   height: 100%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-start;
-
-  
   position: relative;
   img {
     position: relative;
@@ -195,7 +188,6 @@ h1{
   }
 }
 .third_block {
-  // background-color: #008ab6;
   width: 40%;
   height: 100%;
   display: flex;
@@ -203,14 +195,12 @@ h1{
   justify-content: flex-end;
 }
 .third_block_main {
-  // background-color: violet;
   width: 80%;
   height: 65vh;
   display: flex;
   justify-content: flex-end;
 }
 .third_block_left {
-  // background-color: yellow;
   width: 50%;
   height: 100%;
   display: flex;
@@ -220,13 +210,11 @@ h1{
   flex-direction: column;
 }
 .third_block_right {
-  // background-color: orange;
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  // margin-left: 1%;
   flex-direction: column;
 }
 
@@ -303,11 +291,8 @@ h1{
 }
 .four_photo {
   width: 40%;
-  // background-color: red;
-  
   img {
     width: 100%;
-    
     height: 100%;
   }
 }
@@ -461,7 +446,6 @@ h1{
 .five_text {
   width: 90%;
   margin: 0 auto;
-  // background: pink;
 }
 
 .five_read_btn {
@@ -489,22 +473,17 @@ h1{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  // align-items: flex-start;
   background: #f7f7f7;
 }
 .six_conteiner {
-  // background-color: red;
   width: 95%;
   height: 70vh;
-  // background: orange;
   display: flex;
   justify-content: space-between;
 }
 .six_text_content {
-  // background-color: pink;
   width: 45%;
   height: 100%;
-  // background: pink;
   padding-top: 2%;
   
   h1 {
@@ -533,7 +512,6 @@ h1{
 .six_photo {
   width: 50%;
   height: 100%;
-  // background: yellow;
   img {
     width: 100%;
     height: 100%;
@@ -697,9 +675,6 @@ h1{
     }
   }
 
-  .second_photo {
-    // padding-top: 10%;
-  }
   .second_blue_background {
     top: 32%;
   }
@@ -820,9 +795,7 @@ h1{
       font-size: 12px;
     }
   }
-  .second_photo {
-    // padding-top: 10%;
-  }
+
   .second_silver_background {
     top: 5%;
     right: 11%;
@@ -969,7 +942,6 @@ h1{
   .right_side {
     width: 100%;
     min-height: 60vh;
-    // background-color: yellow;
     background-size: 99%;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -1050,10 +1022,8 @@ h1{
   .container_third{
     padding-top: 25%;
     padding-bottom: 20%;
-
     text-align: center;
     min-height: 100vh;
-    // background-color: red;
   }
   .third_block-spot{
    
@@ -1188,7 +1158,6 @@ h1{
   //six conteiner
   .six_block{
     min-height: 130vh;
-    // background-color:orangered;
   }
   .six_conteiner{
     flex-wrap: wrap-reverse;
