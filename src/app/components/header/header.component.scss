@@ -126,9 +126,17 @@ header{
 @media screen and(max-width:480px)  {
     .small_bar{
         display: inline-block;    
+        i{
+            font-size: 22px;   
+            font-weight: 100;
+        }
     }
     .small_search{
-        display: inline-block;    
+        display: inline-block; 
+        i{
+            font-size: 22px; 
+            font-weight: 100;  
+        }   
     }
     .nav-bar{
         display: none;
