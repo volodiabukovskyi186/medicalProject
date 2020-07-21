@@ -1,10 +1,17 @@
-import { Component, OnInit } from "@angular/core";
-import { trigger, state, transition, animate, style, } from '@angular/animations';
-@Component({
-  selector: "app-header",
-  templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.scss"],
+import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  transition,
+  animate,
+  style
+} from '@angular/animations';
+import { TranslateService } from '@ngx-translate/core';
 
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 
   animations: [
     trigger('smallbar', [
@@ -14,37 +21,41 @@ import { trigger, state, transition, animate, style, } from '@angular/animations
       transition('small=>large', animate('400ms ease-in'))
     ])
   ]
-
-
-
 })
-
-
-
 export class HeaderComponent implements OnInit {
-  burgerStatusBtn: boolean = false;
-  burgerStatus:string='small';
-  whoWeAreStatus:string='small';
+  burgerStatusBtn = false;
+  burgerStatus = 'small';
+  whoWeAreStatus = 'small';
+  translateStatus = false;
 
-  constructor() {}
+
+
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {}
 
   burgerMenu(): void {
-    this.burgerStatusBtn == false
+    this.burgerStatusBtn === false
       ? (this.burgerStatusBtn = true)
       : (this.burgerStatusBtn = false);
 
-      (this.burgerStatus=='small'?this.burgerStatus='large':this.burgerStatus='small')
-      console.log(this.burgerStatus)
+    this.burgerStatus === 'small'
+      ? (this.burgerStatus = 'large')
+      : (this.burgerStatus = 'small');
   }
- 
-
 
   onResize(event) {
     if (event.currentTarget.innerWidth) {
       this.burgerStatusBtn = false;
-      this.burgerStatus='small' 
+      this.burgerStatus = 'small' ;
     }
   }
+  translteStatus(): void {
+    this.translateStatus === false ? this.translateStatus = true : this.translateStatus = false;
+
+  }
+
+
 }
+
+

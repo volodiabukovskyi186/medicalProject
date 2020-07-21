@@ -3,20 +3,23 @@
         <div class="small_bar">
                 <i *ngIf="!burgerStatusBtn" (click)="burgerMenu()" class="fas fa-bars"></i>
                 <i *ngIf="burgerStatusBtn" (click)="burgerMenu()" class="fas fa-times"></i>    
-
         </div>
-        <div class="logo">
+        <div class="logo" [routerLink]="[ 'home']">
             <img src="assets/img/Screenshot_1.svg" alt="">
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar"> 
             <ul>
-                <li   >Who we are <i class="fas fa-chevron-down"></i>
-                </li>
-                <li>Walk-in Clinic </li>
-                <li>Services  <i class="fas fa-chevron-down"></i></li>
-                <li>Appointments </li>
-                <li>Contact</li>
-            </ul>
+                <li [routerLink]="[ 'home']"  routerLinkActive="btn-active" >{{'HEADER.FIRSTBTN'|translate}} <i class="fas fa-chevron-down"></i> </li>
+                <li [routerLink]="[ 'second-page']" routerLinkActive="btn-active">{{'HEADER.SECONDBTN'|translate}} </li>
+                <li routerLinkActive="btn-active">{{'HEADER.THIRDBTN'|translate}} <i class="fas fa-chevron-down"></i></li>
+                <li routerLinkActive="btn-active">{{'HEADER.FOURBTN'|translate}} </li>
+                <li routerLinkActive="btn-active">{{'HEADER.FIVEBTN'|translate}}</li>
+                <ul class="translate">
+                        <li  (click)="translate.use('ua')" (click)="translteStatus()" [ngClass]="{'btn-active': translateStatus==true}"  >UA</li>
+                        <span>|</span>
+                        <li (click)="translteStatus()" (click)="translate.use('en')" [ngClass]="{'btn-active': translateStatus==false}">EN</li>
+                </ul>
+            </ul>       
         </div>
         <div class="small_search">
                 <i class="fas fa-search"></i>
@@ -29,7 +32,7 @@
                     <li>Services </li>
                     <li>Appointments </li>
                     <li>Contact</li>
-                </ul>
+             </ul>
     </div>
 
 </header>
